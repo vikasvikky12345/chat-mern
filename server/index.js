@@ -7,9 +7,8 @@ import userRouter from "./routers/userRouter.js";
 import authRouter from "./routers/authRouter.js";
 import { connectToMongodb } from "./db/connectToMongodb.js";
 
-dotenv.config();
-
 const app = express();
+dotenv.config();
 const PORT = process.env.PORT || 3000;
 app.use(express.json());
 app.use(cors());
